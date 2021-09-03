@@ -2,9 +2,28 @@
   font: 16px / 1 sans-serif;
 }
 html {
-  height: 100%;
+  height: auto;
 }
 body {
   margin: 0;
-  min-height: 100%;
+  min-height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.buttonsT1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  color: rgb(195, 140, 68);
+  padding: 2rem;
+}
+
+i .rock {
+  cursor: pointer;
+  display: flex;
 }
