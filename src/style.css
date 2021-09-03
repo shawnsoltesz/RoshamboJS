@@ -9,21 +9,105 @@ body {
   min-height: auto;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(202, 67, 67);
+  font-size: 30px;
+  background-color: rgb(233, 210, 210);
+}
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.buttonsT1 {
+.player1 buttons {
   display: flex;
-  justify-content: space-between;
-  background-color: aquamarine;
-  color: rgb(195, 140, 68);
+  justify-content: space-around;
+  align-content: center;
+  background-color: rgb(207, 255, 239);
+  color: rgb(245, 207, 156);
+  padding: 3rem;
+}
+
+.player2 buttons {
+  display: flex;
+  background-color: rgb(207, 255, 239);
   padding: 2rem;
 }
 
-i .rock {
-  cursor: pointer;
+main {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+section {
+  min-width: 10rem;
+  border: thin solid #7c7c7c;
+  border-radius: 0.3rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2,
+section p {
+  text-align: center;
+}
+
+section h3 {
+  margin: 1rem 0;
+  font-family: Monospace;
+  font-size: 2rem;
+}
+
+buttons {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+.player1 buttons i.rock,
+.player1 buttons i.scissors,
+.player1 buttons i.paper,
+.player2 buttons i.rock,
+.player2 buttons i.scissors,
+.player2 buttons i.paper {
+  color: rgb(2, 157, 2);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.player1 buttons i.rock:hover,
+.player1 buttons i.paper:hover,
+.player1 buttons i.scissors:hover,
+.player2 buttons i.rock:hover,
+.player2 buttons i.paper:hover,
+.player2 buttons i.scissors:hover {
+  color: rgb(16, 83, 16);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.player1 buttons i.rock:active,
+.player1 buttons i.paper:active,
+.player1 buttons i.scissors:active,
+.player2 buttons i.rock:active,
+.player2 buttons i.paper:active,
+.player2 buttons i.scissors:active {
+  color: rgb(1, 15, 1);
+  cursor: pointer;
+  padding: 5px;
 }

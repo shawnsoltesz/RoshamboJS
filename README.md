@@ -21,9 +21,11 @@ rps('scissors','paper') // Player 1 won!
 rps('scissors','rock') // Player 2 won!
 rps('paper','paper') // Draw!
 
-Data:
+Data: strings
 
 Algorithm:
+
+Miro - https://miro.com/app/board/o9J_lzcyVHI=/
 
 Declare a variable for playerSelections (p1, p2)
 Establish if statements with the examples above
