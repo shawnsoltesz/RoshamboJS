@@ -6,7 +6,6 @@ let playerTwoScore = 0
 //Player 1 H3 Score
 
 const playerOneScoreDisplay = document.querySelector('.player1 h3')
-console.log(playerOneScoreDisplay)
 
 //Player 1 Options
 
@@ -41,7 +40,6 @@ playerOneScissors?.addEventListener('click', handleClickOnPlayerOneScissors)
 //Player 2 H3 Score
 
 const playerTwoScoreDisplay = document.querySelector('.player2 h3')
-console.log(playerTwoScoreDisplay)
 
 //Player 2 Options
 
