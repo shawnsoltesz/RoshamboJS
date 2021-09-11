@@ -3,6 +3,11 @@ import './style.css'
 let playerOneScore = 0
 let playerTwoScore = 0
 
+let p1 = ''
+let p2 = ''
+
+const winner = document.querySelector('footer')
+
 //Reset Button
 
 const resetButton = document.querySelector('.reset')
@@ -15,18 +20,70 @@ function handleClickOnResetButton() {
 
 resetButton?.addEventListener('click', handleClickOnResetButton)
 
-//Player 1 H3 Score
+// //Player 1 H3 Score Display
 
-const playerOneScoreDisplay = document.querySelector('.player1 h3')
+// const playerOneScoreDisplay = document.querySelector('.player1 h3')
+
+// //Player One Score
+
+// const playerOneScore = document.querySelector('.player1 h3')
+
+// function handleClickOnPlayerOneScore() {
+//   playerOneScore++
+
+//   if (playerOneScoreDisplay) {
+//     playerOneScoreDisplay.textContent = `${playerOneScore}`
+//     window.alert('Player 1 Won!!')
+//   }
+// }
+
+// playerOneScore?.addEventListener('value', handleClickOnPlayerOneScore)
 
 //Player 1 Options
 
 const playerOneRock = document.querySelector('.player1 .rock')
 
-function handleClickOnPlayerOneRock() {
+function handleClickOnPlayerOneRock(event: Event) {
   console.log('I clicked the rock')
   let p1 = 'rock'
-  return p1
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p2 != '' && p2 === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p2 != '' && p2 === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p2 != '' && p2 === 'rock') {
+      if (winner) {
+        winner.textContent = 'It was a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p2 != '' && p2 === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p2 != '' && p2 === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
 }
 
 playerOneRock?.addEventListener('click', handleClickOnPlayerOneRock)
