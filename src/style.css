@@ -8,7 +8,10 @@ html {
 }
 body {
   margin: 0;
-  min-height: auto;
+  min-height: fit-content;
+  max-height: fit-content;
+  min-width: fit-content;
+  max-width: fit-content;
 }
 
 main {
@@ -22,9 +25,16 @@ header {
   justify-content: center;
   /* font-family: 'Finger Paint', cursive; */
   font-family: 'Rock Salt', cursive;
-  color: rgb(249, 249, 249);
+  color: rgb(236, 215, 208);
   font-size: 30px;
   background-color: rgb(10, 15, 33);
+  border-radius: 0.5rem;
+}
+aside {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 0.3rem;
 }
 
 ul {
@@ -33,20 +43,23 @@ ul {
   list-style: none;
 }
 
-.player1 buttons,
-.player2 buttons {
-  display: flex;
-  cursor: pointer;
-  padding-top: 1rem;
-  padding-block: 1rem;
-  border-width: 5px;
-  border-color: darkblue;
+li {
+  margin-top: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  background-color: rgb(242, 238, 236);
+  border: thin solid #444444;
+  border-radius: 0.3rem;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: rgb(236, 215, 208);
+  padding-top: 1rem;
+  border-radius: 0.5rem;
 }
 
 section {
@@ -54,10 +67,11 @@ section {
   border: thin solid #444444;
   border-radius: 0.3rem;
   margin-bottom: 2rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(244, 223, 198);
+  background-color: rgb(207, 209, 216);
 }
 
 section h2,
@@ -72,42 +86,29 @@ section h3 {
 
 .rock,
 .paper,
-.scissor {
+.scissors {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-right: 0;
-  border: crimson;
-  border-width: 2px;
 }
-.player1 buttons i.rock,
-.player1 buttons i.scissors,
-.player1 buttons i.paper,
-.player2 buttons i.rock,
-.player2 buttons i.scissors,
-.player2 buttons i.paper {
-  color: rgb(2, 157, 2);
+.rock,
+.paper,
+.scissors,
+.reset {
   cursor: pointer;
-  padding: 5px;
+  color: rgb(0, 0, 0);
 }
 
-.player1 buttons i.rock:hover,
-.player1 buttons i.paper:hover,
-.player1 buttons i.scissors:hover,
-.player2 buttons i.rock:hover,
-.player2 buttons i.paper:hover,
-.player2 buttons i.scissors:hover {
-  color: rgb(16, 83, 16);
-  cursor: pointer;
-  padding: 5px;
+.rock:hover,
+.paper:hover,
+.scissors:hover,
+.reset:hover {
+  color: rgb(178, 234, 178);
 }
 
-.player1 buttons i.rock:active,
-.player1 buttons i.paper:active,
-.player1 buttons i.scissors:active,
-.player2 buttons i.rock:active,
-.player2 buttons i.paper:active,
-.player2 buttons i.scissors:active {
-  color: rgb(1, 15, 1);
-  cursor: pointer;
-  padding: 5px;
+.rock:active,
+.paper:active,
+.scissors:active,
+.reset:active {
+  color: rgb(232, 96, 51);
+  padding: 1px;
 }
