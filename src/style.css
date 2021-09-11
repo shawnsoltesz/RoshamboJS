@@ -8,7 +8,7 @@ html {
 }
 body {
   margin: 0;
-  min-height: fit-content;
+  min-height: auto;
   max-height: fit-content;
   min-width: fit-content;
   max-width: fit-content;
@@ -25,10 +25,16 @@ header {
   justify-content: center;
   /* font-family: 'Finger Paint', cursive; */
   font-family: 'Rock Salt', cursive;
-  color: rgb(236, 215, 208);
+  color: rgb(244, 173, 20);
   font-size: 20px;
   background-color: rgb(10, 15, 33);
   border-radius: 0.5rem;
+}
+
+aside {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .reset {
@@ -102,14 +108,19 @@ section h3 {
 
 .rock,
 .paper,
-.scissors {
+.scissors,
+.lizard,
+.spock {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 .rock,
 .paper,
 .scissors,
-.reset {
+.lizard,
+.reset,
+.spock {
   cursor: pointer;
   color: rgb(0, 0, 0);
 }
@@ -117,14 +128,23 @@ section h3 {
 .rock:hover,
 .paper:hover,
 .scissors:hover,
-.reset:hover {
-  background-color: rgb(178, 234, 178);
+.lizard:hover,
+.reset:hover,
+.spock:hover {
+  background-color: rgb(226, 171, 51);
 }
 
 .rock:active,
 .paper:active,
 .scissors:active,
-.reset:active {
-  background-color: rgb(232, 96, 51);
-  padding: 1px;
+.lizard:active,
+.reset:active,
+.spock:active {
+  background-color: rgb(155, 118, 36);
+}
+
+footer {
+  font-size: small;
+  padding-left: 5px;
+  padding-top: 5px;
 }
