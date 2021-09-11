@@ -11,7 +11,8 @@
   --hover-background-color: rgb(226, 171, 51);
   --active-background-color: rgb(155, 118, 36);
   --border-color: thin solid #444444;
-  --header-font: 'Finger Paint', cursive;
+  --header-font: 'Rock Salt', cursive;
+  --page-font: 'Finger Paint', cursive;
 }
 html {
   height: auto;
@@ -35,8 +36,7 @@ main {
 header {
   display: flex;
   justify-content: center;
-  /* font-family: 'Finger Paint', cursive; */
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--header-font);
   color: var(--header-color);
   font-size: 20px;
   background-color: var(--text-color);
@@ -102,7 +102,7 @@ section {
 
 section h2,
 section p {
-  font-family: var(--header-font);
+  font-family: var(--page-font);
   text-align: center;
   font-size: 14px;
 }
