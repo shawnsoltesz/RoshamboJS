@@ -38,7 +38,6 @@ ul {
   display: flex;
   justify-content: start;
   align-content: center;
-  padding: 1rem;
   cursor: pointer;
 }
 
@@ -76,12 +75,11 @@ section h3 {
   font-size: 2rem;
 }
 
-buttons .player1,
-buttons .player2 {
+.player1 buttons,
+.player2 buttons {
   padding-left: 0;
   padding-right: 0;
   border: none;
-  color: aqua;
   size: 100 px;
 }
 .player1 buttons i.rock,
