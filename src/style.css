@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Rock+Salt&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -19,10 +21,11 @@ main {
 header {
   display: flex;
   justify-content: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: rgb(202, 67, 67);
+  font-family: 'Finger Paint', cursive;
+  /* font-family: 'Rock Salt', cursive; */
+  color: rgb(237, 145, 8);
   font-size: 30px;
-  background-color: rgb(233, 210, 210);
+  background-color: rgb(41, 85, 226);
 }
 
 ul {
@@ -70,14 +73,16 @@ section p {
 
 section h3 {
   margin: 1rem 0;
-  font-family: Monospace;
   font-size: 2rem;
 }
 
-buttons {
+buttons .player1,
+buttons .player2 {
   padding-left: 0;
   padding-right: 0;
   border: none;
+  color: aqua;
+  size: 100 px;
 }
 .player1 buttons i.rock,
 .player1 buttons i.scissors,
