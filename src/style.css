@@ -13,9 +13,11 @@
   --header-font: 'Rock Salt', cursive;
   --page-font: 'Finger Paint', cursive;
 }
+
 html {
   height: auto;
 }
+
 body {
   margin: 0;
   min-height: auto;

@@ -37,6 +37,15 @@ function handleClickOnPlayerOneScissors() {
 
 playerOneScissors?.addEventListener('click', handleClickOnPlayerOneScissors)
 
+const playerOneLizard = document.querySelector('.player1 .lizard')
+function handleClickOnPlayerOneLizard() {
+  console.log('I clicked the lizard')
+  let p1 = 'lizard'
+  return p1
+}
+
+playerOneLizard?.addEventListener('click', handleClickOnPlayerOneLizard)
+
 //Player 2 H3 Score
 
 const playerTwoScoreDisplay = document.querySelector('.player2 h3')
