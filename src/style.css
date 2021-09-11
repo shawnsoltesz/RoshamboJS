@@ -20,11 +20,11 @@ main {
 header {
   display: flex;
   justify-content: center;
-  font-family: 'Finger Paint', cursive;
-  /* font-family: 'Rock Salt', cursive; */
-  color: rgb(237, 145, 8);
+  /* font-family: 'Finger Paint', cursive; */
+  font-family: 'Rock Salt', cursive;
+  color: rgb(249, 249, 249);
   font-size: 30px;
-  background-color: rgb(41, 85, 226);
+  background-color: rgb(10, 15, 33);
 }
 
 ul {
@@ -33,17 +33,14 @@ ul {
   list-style: none;
 }
 
-.player1 buttons {
-  display: flex;
-  cursor: pointer;
-}
-
+.player1 buttons,
 .player2 buttons {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 1rem;
   cursor: pointer;
+  padding-top: 1rem;
+  padding-block: 1rem;
+  border-width: 5px;
+  border-color: darkblue;
 }
 
 main {
