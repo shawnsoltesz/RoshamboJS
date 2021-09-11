@@ -15,7 +15,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 2rem;
 }
 
 header {
@@ -36,8 +35,6 @@ ul {
 
 .player1 buttons {
   display: flex;
-  justify-content: start;
-  align-content: center;
   cursor: pointer;
 }
 
@@ -63,6 +60,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(244, 223, 198);
 }
 
 section h2,
@@ -75,12 +73,14 @@ section h3 {
   font-size: 2rem;
 }
 
-.player1 buttons,
-.player2 buttons {
-  padding-left: 0;
+.rock,
+.paper,
+.scissor {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-right: 0;
-  border: none;
-  size: 100 px;
+  border: crimson;
+  border-width: 2px;
 }
 .player1 buttons i.rock,
 .player1 buttons i.scissors,
