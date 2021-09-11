@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Rock+Salt&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+
 :root {
   font: 16px / 1 sans-serif;
+  --text-color: rgb(19, 28, 63);
+  --header-color: rgb(244, 173, 20);
+  --background-color: rgb(236, 215, 208);
+  --icon-background-color: rgb(242, 238, 236);
+  --player-console-background-color: rgb(207, 209, 216);
+  --hover-background-color: rgb(226, 171, 51);
+  --active-background-color: rgb(155, 118, 36);
+  --border-color: thin solid #444444;
+  --header-font: 'Finger Paint', cursive;
 }
 html {
   height: auto;
@@ -12,12 +22,14 @@ body {
   max-height: fit-content;
   min-width: fit-content;
   max-width: fit-content;
+  color: var(--text-color);
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  color: var(--text-color);
 }
 
 header {
@@ -25,9 +37,9 @@ header {
   justify-content: center;
   /* font-family: 'Finger Paint', cursive; */
   font-family: 'Rock Salt', cursive;
-  color: rgb(244, 173, 20);
+  color: var(--header-color);
   font-size: 20px;
-  background-color: rgb(10, 15, 33);
+  background-color: var(--text-color);
   border-radius: 0.5rem;
 }
 
@@ -60,8 +72,8 @@ li {
   padding-right: 8px;
   padding-left: 8px;
   margin-bottom: 5px;
-  background-color: rgb(242, 238, 236);
-  border: thin solid #444444;
+  background-color: var(--icon-background-color);
+  border: var(--border-color);
   border-radius: 0.3rem;
   width: 40px;
   height: 40px;
@@ -71,26 +83,26 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: rgb(236, 215, 208);
+  background-color: var(--background-color);
   padding-top: 1rem;
   border-radius: 0.5rem;
 }
 
 section {
-  min-width: 10rem;
-  border: thin solid #444444;
+  min-width: 8rem;
+  border: var(--border-color);
   border-radius: 0.3rem;
   margin-bottom: 2rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(207, 209, 216);
+  background-color: var(--player-console-background-color);
 }
 
 section h2,
 section p {
-  font-family: 'Finger Paint', cursive;
+  font-family: var(--header-font);
   text-align: center;
   font-size: 14px;
 }
@@ -116,7 +128,7 @@ section h3 {
 .reset,
 .spock {
   cursor: pointer;
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
 }
 
 .rock:hover,
@@ -125,7 +137,7 @@ section h3 {
 .lizard:hover,
 .reset:hover,
 .spock:hover {
-  background-color: rgb(226, 171, 51);
+  background-color: var(--hover-background-color);
 }
 
 .rock:active,
@@ -134,7 +146,7 @@ section h3 {
 .lizard:active,
 .reset:active,
 .spock:active {
-  background-color: rgb(155, 118, 36);
+  background-color: var(--active-background-color);
 }
 
 footer {
