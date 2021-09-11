@@ -3,6 +3,18 @@ import './style.css'
 let playerOneScore = 0
 let playerTwoScore = 0
 
+//Reset Button
+
+const resetButton = document.querySelector('.reset')
+
+function handleClickOnResetButton() {
+  console.log('I clicked the reset')
+  let reset = 'reset'
+  return reset
+}
+
+resetButton?.addEventListener('click', handleClickOnResetButton)
+
 //Player 1 H3 Score
 
 const playerOneScoreDisplay = document.querySelector('.player1 h3')
