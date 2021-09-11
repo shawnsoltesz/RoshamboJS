@@ -1,43 +1,13 @@
 import './style.css'
 
-let playerOneScore = 0
-let playerTwoScore = 0
+const p1 = ''
+console.log(p1)
+const p2 = ''
+console.log(p2)
 
-let p1 = ''
-let p2 = ''
-//**REVIST**
-const winner = document.querySelector('footer')
+//Winner Display
 
-//Reset Button
-
-const resetButton = document.querySelector('.reset')
-
-function handleClickOnResetButton() {
-  console.log('I clicked the reset')
-  let reset = 'reset'
-  return reset
-}
-
-resetButton?.addEventListener('click', handleClickOnResetButton)
-
-// //Player 1 H3 Score Display
-
-// const playerOneScoreDisplay = document.querySelector('.player1 h3')
-
-// //Player One Score
-
-// const playerOneScore = document.querySelector('.player1 h3')
-
-// function handleClickOnPlayerOneScore() {
-//   playerOneScore++
-
-//   if (playerOneScoreDisplay) {
-//     playerOneScoreDisplay.textContent = `${playerOneScore}`
-//     window.alert('Player 1 Won!!')
-//   }
-// }
-
-// playerOneScore?.addEventListener('value', handleClickOnPlayerOneScore)
+// const winner = (document.body.textContent = 'bottom-section')
 
 //Player 1 Options
 
@@ -271,10 +241,6 @@ function handleClickOnPlayerOneSpock(event: Event) {
 
 playerOneSpock?.addEventListener('click', handleClickOnPlayerOneSpock)
 
-//Player 2 H3 Score
-
-const playerTwoScoreDisplay = document.querySelector('.player2 h3')
-
 //Player 2 Options
 
 const playerTwoRock = document.querySelector('.player2 .rock')
@@ -418,7 +384,7 @@ playerTwoScissors?.addEventListener('click', handleClickOnPlayerTwoScissors)
 
 const playerTwoLizard = document.querySelector('.player2 .lizard')
 function handleClickOnPlayerTwoLizard(event: Event) {
-  console.log('p2 - I clicked the lizard')
+  console.log('p2 clicked the lizard')
   let p2 = 'lizard'
 
   const buttonClicked = event.target
@@ -507,42 +473,3 @@ function handleClickOnPlayerTwoSpock(event: Event) {
 }
 
 playerTwoSpock?.addEventListener('click', handleClickOnPlayerTwoSpock)
-
-//Scoring
-function Scoring(p1, p2) {
-  {
-    if (p1 == 'scissors' && p2 == 'paper') {
-      window.alert('Player 1 won!')
-    }
-    if (p1 == 'paper' && p2 == 'rock') {
-      window.alert('Player 1 won!')
-    }
-    if (p1 == 'rock' && p2 == 'scissors') {
-      window.alert('Player 1 won!')
-    }
-    if (p1 == 'paper' && p2 == 'scissors') {
-      window.alert('Player 2 won!')
-    }
-    if (p1 == 'rock' && p2 == 'paper') {
-      window.alert('Player 2 won!')
-    }
-    if (p1 == 'scissors' && p2 == 'rock') {
-      window.alert('Player 2 won!')
-    }
-    if (p1 == 'scissors' && p2 == 'scissors') {
-      window.alert('Draw!')
-    }
-    if (p1 == 'rock' && p2 == 'rock') {
-      window.alert('Draw!')
-    }
-    if (p1 == 'paper' && p2 == 'paper') {
-      window.alert('Draw!')
-    }
-  }
-}
-
-// rps('rock', 'scissors')
-// rps('scissors', 'scissors')
-// rps('paper', 'scissors')
-// rps('paper', 'paper')
-// rps('rock', 'rock')

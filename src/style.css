@@ -94,7 +94,8 @@ main {
   border-radius: 0.5rem;
 }
 
-section {
+section .player1,
+section .player2 {
   min-width: 8rem;
   border: var(--border-color);
   border-radius: 0.5rem;
@@ -132,7 +133,6 @@ section h3 {
 .paper,
 .scissors,
 .lizard,
-.reset,
 .spock {
   cursor: pointer;
   color: var(--text-color);
@@ -142,7 +142,6 @@ section h3 {
 .paper:hover,
 .scissors:hover,
 .lizard:hover,
-.reset:hover,
 .spock:hover {
   background-color: var(--hover-background-color);
 }
@@ -151,9 +150,12 @@ section h3 {
 .paper:active,
 .scissors:active,
 .lizard:active,
-.reset:active,
 .spock:active {
   background-color: var(--active-background-color);
+}
+
+.winner {
+  background-color: fuchsia;
 }
 
 footer {
