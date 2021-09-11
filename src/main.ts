@@ -280,45 +280,230 @@ const playerTwoScoreDisplay = document.querySelector('.player2 h3')
 const playerTwoRock = document.querySelector('.player2 .rock')
 
 function handleClickOnPlayerTwoRock(event: Event) {
-  console.log('I clicked the rock')
+  console.debug('p2 clicked the rock')
   let p2 = 'rock'
-  return p2
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'rock') {
+      if (winner) {
+        winner.textContent = 'It was a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
 }
 
 playerTwoRock?.addEventListener('click', handleClickOnPlayerTwoRock)
 
 const playerTwoPaper = document.querySelector('.player2 .paper')
-function handleClickOnPlayerTwoPaper() {
-  console.log('I clicked the paper')
+function handleClickOnPlayerTwoPaper(event: Event) {
+  console.debug('p2 clicked the paper')
   let p2 = 'paper'
-  return p2
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'paper') {
+      if (winner) {
+        winner.textContent = 'It was a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'rock') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
 }
 
 playerTwoPaper?.addEventListener('click', handleClickOnPlayerTwoPaper)
 
 const playerTwoScissors = document.querySelector('.player2 .scissors')
 function handleClickOnPlayerTwoScissors(event: Event) {
-  console.log('I clicked the scissors')
+  console.debug('p2 clicked the scissors')
   let p2 = 'scissors'
-  return p2
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'scissors') {
+      if (winner) {
+        winner.textContent = 'It was a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'rock') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
 }
 
 playerTwoScissors?.addEventListener('click', handleClickOnPlayerTwoScissors)
 
 const playerTwoLizard = document.querySelector('.player2 .lizard')
-function handleClickOnPlayerTwoLizard() {
+function handleClickOnPlayerTwoLizard(event: Event) {
   console.log('p2 - I clicked the lizard')
   let p2 = 'lizard'
-  return p2
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'rock') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'lizard') {
+      if (winner) {
+        winner.textContent = 'It was a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
 }
 
 playerTwoLizard?.addEventListener('click', handleClickOnPlayerTwoLizard)
 
 const playerTwoSpock = document.querySelector('.player2 .spock')
 function handleClickOnPlayerTwoSpock(event: Event) {
-  console.log('p2 - I clicked the spock')
+  console.debug('p2 clicked the spock')
   let p2 = 'spock'
-  return p2
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'rock') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 1 wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (p1 != '' && p1 === 'spock') {
+      if (winner) {
+        winner.textContent = 'It was a draw!'
+      }
+    }
+  }
 }
 
 playerTwoSpock?.addEventListener('click', handleClickOnPlayerTwoSpock)

@@ -2,13 +2,13 @@
 
 :root {
   font: 16px / 1 sans-serif;
-  --text-color: rgb(19, 28, 63);
-  --header-color: rgb(244, 173, 20);
-  --background-color: rgb(236, 215, 208);
-  --icon-background-color: rgb(242, 238, 236);
+  --text-color: #39395f;
+  --header-color: #a9c25d;
+  --background-color: #a9c25d;
+  --icon-background-color: #f5eec2;
   --section-background-color: rgb(207, 209, 216);
-  --hover-background-color: rgb(226, 171, 51);
-  --active-background-color: rgb(155, 118, 36);
+  --hover-background-color: #73a24e;
+  --active-background-color: #416a59;
   --border-color: thin solid #444444;
   --header-font: 'Rock Salt', cursive;
 }
@@ -40,7 +40,6 @@ header {
   color: var(--header-color);
   font-size: 20px;
   background-color: var(--text-color);
-  border-radius: 0.5rem;
 }
 
 aside {
@@ -61,7 +60,7 @@ aside {
   width: 40px;
   height: 40px;
   border: var(--border-color);
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   align-items: center;
   background-color: var(--icon-background-color);
 }
@@ -81,7 +80,7 @@ li {
   padding-right: 5px;
   background-color: var(--icon-background-color);
   border: var(--border-color);
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   width: 40px;
   height: 40px;
 }
@@ -98,7 +97,7 @@ main {
 section {
   min-width: 8rem;
   border: var(--border-color);
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   margin-bottom: 2rem;
   padding-bottom: 8px;
   display: flex;
