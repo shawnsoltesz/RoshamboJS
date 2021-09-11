@@ -39,12 +39,21 @@ playerOneScissors?.addEventListener('click', handleClickOnPlayerOneScissors)
 
 const playerOneLizard = document.querySelector('.player1 .lizard')
 function handleClickOnPlayerOneLizard() {
-  console.log('I clicked the lizard')
+  console.log('p1 - I clicked the lizard')
   let p1 = 'lizard'
   return p1
 }
 
 playerOneLizard?.addEventListener('click', handleClickOnPlayerOneLizard)
+
+const playerOneSpock = document.querySelector('.player1 .spock')
+function handleClickOnPlayerOneSpock() {
+  console.log('p1 - I clicked the spock')
+  let p1 = 'spock'
+  return p1
+}
+
+playerOneSpock?.addEventListener('click', handleClickOnPlayerOneSpock)
 
 //Player 2 H3 Score
 
@@ -79,6 +88,24 @@ function handleClickOnPlayerTwoScissors() {
 }
 
 playerTwoScissors?.addEventListener('click', handleClickOnPlayerTwoScissors)
+
+const playerTwoLizard = document.querySelector('.player2 .lizard')
+function handleClickOnPlayerTwoLizard() {
+  console.log('p2 - I clicked the lizard')
+  let p2 = 'lizard'
+  return p2
+}
+
+playerTwoLizard?.addEventListener('click', handleClickOnPlayerTwoLizard)
+
+const playerTwoSpock = document.querySelector('.player2 .spock')
+function handleClickOnPlayerTwoSpock() {
+  console.log('p2 - I clicked the spock')
+  let p2 = 'spock'
+  return p2
+}
+
+playerTwoSpock?.addEventListener('click', handleClickOnPlayerTwoSpock)
 
 //Scoring
 function Scoring(p1, p2) {
