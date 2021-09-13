@@ -1,21 +1,20 @@
 import './style.css'
 
-const p1 = ''
-console.log(p1)
-const p2 = ''
-console.log(p2)
+let p1 = ''
+let p2 = ''
 
 //Winner Display
 
-// const winner = (document.body.textContent = 'bottom-section')
+const winner = document.querySelector('.winner')
 
 //Player 1 Options
 
 const playerOneRock = document.querySelector('.player1 .rock')
 
 function handleClickOnPlayerOneRock(event: Event) {
+  p1 = 'rock'
+
   console.debug('p1 clicked the rock')
-  let p1 = 'rock'
 
   const buttonClicked = event.target
 
@@ -61,7 +60,7 @@ playerOneRock?.addEventListener('click', handleClickOnPlayerOneRock)
 const playerOnePaper = document.querySelector('.player1 .paper')
 function handleClickOnPlayerOnePaper(event: Event) {
   console.debug('p1 clicked the paper')
-  let p1 = 'paper'
+  p1 = 'paper'
 
   const buttonClicked = event.target
 
@@ -107,7 +106,7 @@ playerOnePaper?.addEventListener('click', handleClickOnPlayerOnePaper)
 const playerOneScissors = document.querySelector('.player1 .scissors')
 function handleClickOnPlayerOneScissors(event: Event) {
   console.debug('p1 clicked the scissors')
-  let p1 = 'scissors'
+  p1 = 'scissors'
 
   const buttonClicked = event.target
 
@@ -153,7 +152,7 @@ playerOneScissors?.addEventListener('click', handleClickOnPlayerOneScissors)
 const playerOneLizard = document.querySelector('.player1 .lizard')
 function handleClickOnPlayerOneLizard(event: Event) {
   console.debug('p1 clicked the lizard')
-  let p1 = 'lizard'
+  p1 = 'lizard'
 
   const buttonClicked = event.target
 
@@ -199,7 +198,7 @@ playerOneLizard?.addEventListener('click', handleClickOnPlayerOneLizard)
 const playerOneSpock = document.querySelector('.player1 .spock')
 function handleClickOnPlayerOneSpock(event: Event) {
   console.debug('p1 clicked the spock')
-  let p1 = 'spock'
+  p1 = 'spock'
   const buttonClicked = event.target
 
   if (buttonClicked instanceof HTMLButtonElement) {
@@ -247,7 +246,7 @@ const playerTwoRock = document.querySelector('.player2 .rock')
 
 function handleClickOnPlayerTwoRock(event: Event) {
   console.debug('p2 clicked the rock')
-  let p2 = 'rock'
+  p2 = 'rock'
 
   const buttonClicked = event.target
 
@@ -293,7 +292,7 @@ playerTwoRock?.addEventListener('click', handleClickOnPlayerTwoRock)
 const playerTwoPaper = document.querySelector('.player2 .paper')
 function handleClickOnPlayerTwoPaper(event: Event) {
   console.debug('p2 clicked the paper')
-  let p2 = 'paper'
+  p2 = 'paper'
 
   const buttonClicked = event.target
 
@@ -339,7 +338,7 @@ playerTwoPaper?.addEventListener('click', handleClickOnPlayerTwoPaper)
 const playerTwoScissors = document.querySelector('.player2 .scissors')
 function handleClickOnPlayerTwoScissors(event: Event) {
   console.debug('p2 clicked the scissors')
-  let p2 = 'scissors'
+  p2 = 'scissors'
 
   const buttonClicked = event.target
 
@@ -385,7 +384,7 @@ playerTwoScissors?.addEventListener('click', handleClickOnPlayerTwoScissors)
 const playerTwoLizard = document.querySelector('.player2 .lizard')
 function handleClickOnPlayerTwoLizard(event: Event) {
   console.log('p2 clicked the lizard')
-  let p2 = 'lizard'
+  p2 = 'lizard'
 
   const buttonClicked = event.target
 
@@ -431,7 +430,7 @@ playerTwoLizard?.addEventListener('click', handleClickOnPlayerTwoLizard)
 const playerTwoSpock = document.querySelector('.player2 .spock')
 function handleClickOnPlayerTwoSpock(event: Event) {
   console.debug('p2 clicked the spock')
-  let p2 = 'spock'
+  p2 = 'spock'
 
   const buttonClicked = event.target
 
