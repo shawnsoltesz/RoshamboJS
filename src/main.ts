@@ -5,7 +5,7 @@ let p2 = ''
 
 //Winner Display
 
-const winner = document.querySelector('.winner')
+const winner = document.querySelector('footer')
 
 //Player 1 Options
 

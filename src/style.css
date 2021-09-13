@@ -74,7 +74,7 @@ main {
   justify-content: space-evenly;
   background-color: var(--background-color);
   padding-top: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.9rem;
 }
 
 section .player1,
@@ -113,15 +113,16 @@ section h3 {
 .spock {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.rock,
-.paper,
-.scissors,
-.lizard,
-.spock {
   cursor: pointer;
   color: var(--text-color);
+}
+
+.rock:focus,
+.paper:focus,
+.scissors:focus,
+.lizard:focus,
+.spock:focus {
+  background-color: red;
 }
 
 .rock:hover,
@@ -141,13 +142,8 @@ section h3 {
 }
 
 .winner {
-  background-color: rgb(153, 255, 0);
-  font-size: 3rem;
-  font-family: 'ZCOOL KuaiLe', cursive;
-  padding: 1rem;
-  padding-left: 8.25rem;
-  text-decoration: underline;
-  border: black solid 0.5rem;
+  background-color: rgb(153, 142, 216);
+  font-size: 24px;
 }
 
 footer {
