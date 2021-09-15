@@ -12,46 +12,32 @@ const winner = document.querySelector('h4')
 const playerOneRock = document.querySelector('.player1 .rock')
 
 function handleClickOnPlayerOneRock(event: Event) {
-  p1 = 'rock'
-
   console.debug('p1 clicked the rock')
+  p1 = 'rock'
 
   const buttonClicked = event.target
 
   if (buttonClicked instanceof HTMLElement) {
     if (p2 != '' && p2 === 'scissors') {
-      console.log('TESTING')
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'paper') {
+    } else if (p2 != '' && p2 === 'paper') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'rock') {
+    } else if (p2 != '' && p2 === 'rock') {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'lizard') {
+    } else if (p2 != '' && p2 === 'lizard') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
     }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'spock') {
-      if (winner) {
-        winner.textContent = 'Player 2 wins!'
-      }
+  } else if (p2 != '' && p2 === 'spock') {
+    if (winner) {
+      winner.textContent = 'Player 2 wins!'
     }
   }
 }
@@ -70,31 +56,19 @@ function handleClickOnPlayerOnePaper(event: Event) {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'paper') {
+    } else if (p2 != '' && p2 === 'paper') {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'rock') {
+    } else if (p2 != '' && p2 === 'rock') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'lizard') {
+    } else if (p2 != '' && p2 === 'lizard') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'spock') {
+    } else if (p2 != '' && p2 === 'spock') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
@@ -116,31 +90,19 @@ function handleClickOnPlayerOneScissors(event: Event) {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'paper') {
+    } else if (p2 != '' && p2 === 'paper') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'rock') {
+    } else if (p2 != '' && p2 === 'rock') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'lizard') {
+    } else if (p2 != '' && p2 === 'lizard') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'spock') {
+    } else if (p2 != '' && p2 === 'spock') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
@@ -162,31 +124,19 @@ function handleClickOnPlayerOneLizard(event: Event) {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'paper') {
+    } else if (p2 != '' && p2 === 'paper') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'rock') {
+    } else if (p2 != '' && p2 === 'rock') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'scissors') {
+    } else if (p2 != '' && p2 === 'scissors') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'spock') {
+    } else if (p2 != '' && p2 === 'spock') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
@@ -207,31 +157,19 @@ function handleClickOnPlayerOneSpock(event: Event) {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'paper') {
+    } else if (p2 != '' && p2 === 'paper') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'rock') {
+    } else if (p2 != '' && p2 === 'rock') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'lizard') {
+    } else if (p2 != '' && p2 === 'lizard') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p2 != '' && p2 === 'spock') {
+    } else if (p2 != '' && p2 === 'spock') {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
@@ -256,31 +194,19 @@ function handleClickOnPlayerTwoRock(event: Event) {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'paper') {
+    } else if (p1 != '' && p1 === 'paper') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'rock') {
+    } else if (p1 != '' && p1 === 'rock') {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'lizard') {
+    } else if (p1 != '' && p1 === 'lizard') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'spock') {
+    } else if (p1 != '' && p1 === 'spock') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
@@ -302,31 +228,19 @@ function handleClickOnPlayerTwoPaper(event: Event) {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'paper') {
+    } else if (p1 != '' && p1 === 'paper') {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'rock') {
+    } else if (p1 != '' && p1 === 'rock') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'lizard') {
+    } else if (p1 != '' && p1 === 'lizard') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'spock') {
+    } else if (p1 != '' && p1 === 'spock') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
@@ -345,39 +259,23 @@ function handleClickOnPlayerTwoScissors(event: Event) {
   console.debug(buttonClicked)
 
   if (buttonClicked instanceof HTMLElement) {
-    console.debug('Testing doublecheck')
     if (p1 != '' && p1 === 'scissors') {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'paper') {
+    } else if (p1 != '' && p1 === 'paper') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'rock') {
-      console.debug('vs code knows that player 1 clicked rock')
+    } else if (p1 != '' && p1 === 'rock') {
       if (winner) {
-        console.debug('the winner html element has been selected')
         winner.textContent = 'Player 1 wins!'
-        console.debug(winner.textContent)
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'lizard') {
+    } else if (p1 != '' && p1 === 'lizard') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'spock') {
+    } else if (p1 != '' && p1 === 'spock') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
@@ -399,31 +297,19 @@ function handleClickOnPlayerTwoLizard(event: Event) {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'paper') {
+    } else if (p1 != '' && p1 === 'paper') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'rock') {
+    } else if (p1 != '' && p1 === 'rock') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'lizard') {
+    } else if (p1 != '' && p1 === 'lizard') {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'spock') {
+    } else if (p1 != '' && p1 === 'spock') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
@@ -445,31 +331,19 @@ function handleClickOnPlayerTwoSpock(event: Event) {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'paper') {
+    } else if (p1 != '' && p1 === 'paper') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'rock') {
+    } else if (p1 != '' && p1 === 'rock') {
       if (winner) {
         winner.textContent = 'Player 2 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'lizard') {
+    } else if (p1 != '' && p1 === 'lizard') {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  }
-  if (buttonClicked instanceof HTMLElement) {
-    if (p1 != '' && p1 === 'spock') {
+    } else if (p1 != '' && p1 === 'spock') {
       if (winner) {
         winner.textContent = 'It was a draw!'
       }
