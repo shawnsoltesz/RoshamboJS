@@ -14,9 +14,7 @@ const resetButton = document.querySelector('.reset-button')
 function handleClickOnResetButton(event: Event) {
   console.debug('reset clicked the rock')
   p1 = ''
-  console.log(p1)
   p2 = ''
-  console.log(p2)
 
   const buttonClicked = event.target
 
@@ -24,37 +22,9 @@ function handleClickOnResetButton(event: Event) {
     if (winner) {
       winner.textContent = ''
     }
-    console.log(winner?.textContent)
   }
 }
 resetButton?.addEventListener('click', handleClickOnResetButton)
-
-// const resetButton = document.querySelector('.reset-button')
-
-// function handleClickOnResetButton() {
-// p1 = ''
-// console.log(p1)
-// p2 = ''
-// console.log(p2)
-
-// const resetButton = document.querySelector('.reset-button')
-
-// function handleClickOnResetButton() {
-//   // p1 = ''
-//   // console.log(p1)
-//   // p2 = ''
-//   // console.log(p2)
-
-//   // winner.textContent = ''
-
-//   p2 != '' && p2 === ''
-
-//   winner.textContent = ''
-
-//   console.log('i am clicked')
-// }
-
-// resetButton?.addEventListener('click', handleClickOnResetButton)
 
 //Player 1 Options
 
@@ -83,10 +53,10 @@ function handleClickOnPlayerOneRock(event: Event) {
       if (winner) {
         winner.textContent = 'Player 1 wins!'
       }
-    }
-  } else if (p2 != '' && p2 === 'spock') {
-    if (winner) {
-      winner.textContent = 'Player 2 wins!'
+    } else if (p2 != '' && p2 === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 2 wins!'
+      }
     }
   }
 }
@@ -305,7 +275,6 @@ function handleClickOnPlayerTwoScissors(event: Event) {
   p2 = 'scissors'
 
   const buttonClicked = event.target
-  console.debug(buttonClicked)
 
   if (buttonClicked instanceof HTMLElement) {
     if (p1 != '' && p1 === 'scissors') {

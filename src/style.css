@@ -147,6 +147,11 @@ section h3 {
 }
 
 .reset-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 15px;
   padding: 0;
   background-color: (--background-color);
 }
