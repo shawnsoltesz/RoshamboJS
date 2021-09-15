@@ -7,6 +7,55 @@ let p2 = ''
 
 const winner = document.querySelector('h4')
 
+//Reset button
+
+const resetButton = document.querySelector('.reset-button')
+
+function handleClickOnResetButton(event: Event) {
+  console.debug('reset clicked the rock')
+  p1 = ''
+  console.log(p1)
+  p2 = ''
+  console.log(p2)
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLElement) {
+    if (winner) {
+      winner.textContent = ''
+    }
+    console.log(winner?.textContent)
+  }
+}
+resetButton?.addEventListener('click', handleClickOnResetButton)
+
+// const resetButton = document.querySelector('.reset-button')
+
+// function handleClickOnResetButton() {
+// p1 = ''
+// console.log(p1)
+// p2 = ''
+// console.log(p2)
+
+// const resetButton = document.querySelector('.reset-button')
+
+// function handleClickOnResetButton() {
+//   // p1 = ''
+//   // console.log(p1)
+//   // p2 = ''
+//   // console.log(p2)
+
+//   // winner.textContent = ''
+
+//   p2 != '' && p2 === ''
+
+//   winner.textContent = ''
+
+//   console.log('i am clicked')
+// }
+
+// resetButton?.addEventListener('click', handleClickOnResetButton)
+
 //Player 1 Options
 
 const playerOneRock = document.querySelector('.player1 .rock')
