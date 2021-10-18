@@ -5,14 +5,13 @@ let p2 = ''
 
 //Winner Display
 
-const winner = document.querySelector('h4')
+let winner = document.querySelector('h4')
 
 //Reset button
 
 const resetButton = document.querySelector('.reset-button')
 
 function handleClickOnResetButton(event: Event) {
-  console.debug('reset clicked the rock')
   p1 = ''
   p2 = ''
 
