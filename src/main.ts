@@ -19,7 +19,7 @@ function handleClickOnResetButton(event: Event) {
 
   if (buttonClicked instanceof HTMLElement) {
     if (winner) {
-      winner.textContent = ''
+      winner.textContent = 'Winner Announcement'
     }
   }
 }
@@ -168,6 +168,7 @@ const playerOneSpock = document.querySelector('.player1 .spock')
 function handleClickOnPlayerOneSpock(event: Event) {
   console.debug('p1 clicked the spock')
   p1 = 'spock'
+
   const buttonClicked = event.target
 
   if (buttonClicked instanceof HTMLElement) {
